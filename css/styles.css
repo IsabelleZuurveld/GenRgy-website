@@ -47,3 +47,7 @@ footer a:hover {
         color: #f2e958 ; 
 		font-family:  "Helvetica Neue", "sans-serif";
       }
+
+.custom-text-color {
+  color: #f2e958; /* Replace with your preferred color (hex, rgb, named) */
+}
