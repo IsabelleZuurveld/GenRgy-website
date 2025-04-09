@@ -51,3 +51,17 @@ footer a:hover {
 .custom-text-color {
   color: #f2e958; /* Replace with your preferred color (hex, rgb, named) */
 }
+.custom-text-color {
+  color: #2B3499; /* Change this color to match your branding */
+}
+
+.custom-text-color a {
+  color: #FF4081; /* Custom link color */
+}
+
+.custom-text-color a:hover {
+  color: #D81B60; /* Custom hover color */
+}
+body {
+  color: yellow !important;
+}
