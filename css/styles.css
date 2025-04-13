@@ -65,3 +65,8 @@ footer a:hover {
 body {
   color: yellow !important;
 }
+
+.text-color {
+        color: #251d46 ; 
+		font-family:  "Helvetica Neue", "sans-serif";
+      }
