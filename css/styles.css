@@ -207,3 +207,22 @@ body {
             drop-shadow(0 0 20px #FFD700);
   }
 }
+.neon-logo {
+  max-width: 100%;
+  width: 600px;
+  filter: drop-shadow(0 0 10px #E412AA)
+          drop-shadow(0 0 20px #E412AA)
+          drop-shadow(0 0 40px #FFD700);
+  transition: all 0.3s ease-in-out;
+  animation: pulseGlow 3s infinite ease-in-out;
+}
+
+.hero-animated h1 {
+  font-size: 5rem; /* groter dan display-1 */
+  text-shadow: 0 0 10px #fff, 0 0 30px #E412AA;
+}
+
+.hero-animated p {
+  font-size: 1.8rem;
+  text-shadow: 0 0 5px #FFD700;
+}
