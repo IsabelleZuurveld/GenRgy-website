@@ -160,3 +160,8 @@ body {
   letter-spacing: 0.5px;
   margin-top: 0.2rem;
 }
+.tagline {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600; /* Semi-bold */
+  color: #E412AA;   /* Optional: color change */
+}
