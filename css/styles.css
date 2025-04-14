@@ -234,3 +234,13 @@ body {
         color: #251d46 ; 
 		font-family:  "Helvetica Neue", "sans-serif";
       }
+#navbar-corporate .nav-link {
+  color: #E412AA 
+}
+
+#navbar-corporate .nav-link:hover {
+  color: #ff78d3 
+}.text-color {
+        color: #251d46 ; 
+		font-family:  "Helvetica Neue", "sans-serif";
+      }
