@@ -1,6 +1,7 @@
 /* Importing a Google Font */
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
 /* Changing the main font and background colour */
 
@@ -66,7 +67,96 @@ body {
   color: yellow !important;
 }
 
-.text-color {
-        color: #251d46 ; 
-		font-family:  "Helvetica Neue", "sans-serif";
-      }
+
+.our-values-title {
+  font-family: 'Staatliches', sans-serif;
+  font-size: 3rem;
+  font-weight: 400; /* Staatliches heeft vaste gewicht */
+  color: #f2e958;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+
+.value-block {
+  padding: 1.5rem;
+  font-size: 1.25rem;
+  color: white;
+  text-align: center;
+  border-radius: 2rem;
+  border: 2px solid;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.value-block:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255, 255, 0, 0.5);
+  cursor: pointer;
+}
+
+/* color per value */
+.value-red {
+  background-color: #e635bd;
+  border-color: #f4a7e2;
+}
+
+.value-orange {
+  background-color: #004830;
+  border-color: #738063;
+}
+
+.value-green {
+  background-color: #fea000;
+  border-color: #ffd183;
+}
+
+.value-blue {
+  background-color: #241d45;
+  border-color: #625b84;
+}
+
+.value-purple {
+  background-color: #531e40;
+  border-color: #966d88;
+}
+
+/* Poster look for titels */
+.poster-title {
+  font-family: 'Staatliches', sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #f2e958;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+.vision-section {
+  background-color: #fea000; /* <- hier jouw nieuwe kleur */
+  padding: 40px 20px;
+}
+.vision-text {
+  color: #241d45; /* Voor een donkere grijstint (goed leesbaar) */
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+.team-member h3 {
+  color: #f2e958; /* Geel als accentkleur */
+  font-family: 'Staatliches', sans-serif; /* Poster look */
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 15px;
+}
+
+/* Algemene stijl voor rollen */
+.team-member p {
+  color: #fea000 !important; /* Oranje-geel – kies hier je kleur */
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: lowercase;
+  letter-spacing: 0.5px;
+  margin-top: 0.2rem;
+}
