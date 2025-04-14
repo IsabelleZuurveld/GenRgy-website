@@ -165,3 +165,46 @@ body {
   font-weight: 600; /* Semi-bold */
   color: #E412AA;   /* Optional: color change */
 }
+.hero-animated {
+  background: linear-gradient(270deg, #E412AA, #FFD700, #00ffff);
+  background-size: 600% 600%;
+  animation: gradientShift 10s ease infinite;
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 20px #E412AA;
+}
+
+@keyframes gradientShift {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+.neon-logo {
+  filter: drop-shadow(0 0 10px #E412AA)
+          drop-shadow(0 0 20px #E412AA)
+          drop-shadow(0 0 40px #FFD700);
+  transition: all 0.3s ease-in-out;
+  animation: pulseGlow 3s infinite ease-in-out;
+}
+
+.neon-logo:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 15px #fff)
+          drop-shadow(0 0 30px #E412AA)
+          drop-shadow(0 0 60px #FFD700);
+}
+
+@keyframes pulseGlow {
+  0% {
+    filter: drop-shadow(0 0 10px #E412AA)
+            drop-shadow(0 0 20px #FFD700);
+  }
+  50% {
+    filter: drop-shadow(0 0 20px #E412AA)
+            drop-shadow(0 0 40px #FFD700);
+  }
+  100% {
+    filter: drop-shadow(0 0 10px #E412AA)
+            drop-shadow(0 0 20px #FFD700);
+  }
+}
