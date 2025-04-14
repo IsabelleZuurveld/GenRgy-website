@@ -234,3 +234,13 @@ body {
         color: #251d46 ; 
 		font-family:  "Helvetica Neue", "sans-serif";
       }
+
+ #navbar-corporate a {
+    color: #E412AA !important;  /* Je roze kleur */
+    font-weight: 400;           /* Maakt het iets dikker */
+  }
+
+  #navbar-corporate a:hover {
+    text-decoration: underline;
+    color: #fea000 !important;  /* Eventueel lichtere roze bij hover */
+  }
