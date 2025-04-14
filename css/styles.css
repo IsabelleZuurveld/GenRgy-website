@@ -178,7 +178,6 @@ body {
   50% {background-position: 100% 50%;}
   100% {background-position: 0% 50%;}
 }
-
 .neon-logo {
   filter: drop-shadow(0 0 10px #E412AA)
           drop-shadow(0 0 20px #E412AA)
