@@ -255,3 +255,137 @@ body {
   transform: scale(1);
   z-index: 2;
 }
+/* GenRgy section styling */
+section.container.my-4 {
+  background: linear-gradient(90deg, #F2E958 0%, #FEA000 100%);
+  color: #241D45;
+  border-radius: 2rem;
+  padding: 2rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Section headline */
+section h2 {
+  font-family: 'Grown', serif;
+  font-size: 2.5rem;
+  color: #531E40;
+}
+
+/* Filter buttons styled with GenRgy vibes */
+.filter-btn {
+  border-radius: 2rem;
+  font-weight: 700;
+  background-color: #E635BD;
+  border: none;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  margin: 0.3rem;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: #FEA000;
+  color: #241D45;
+  transform: scale(1.05);
+}
+
+/* Cards: electric pop */
+.festival-card .card {
+  border: none;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.festival-card .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Card text color override */
+.festival-card .card-body {
+  color: #241D45;
+}
+
+/* Badge styling */
+.card .badge {
+  font-size: 0.75rem;
+  padding: 0.4em 0.8em;
+  font-weight: bold;
+  border-radius: 1rem;
+}
+
+/* Custom badge themes */
+.badge.bg-warning {
+  background-color: #FEA000 !important;
+  color: #241D45;
+}
+
+.badge.bg-danger {
+  background-color: #E635BD !important;
+}
+
+.badge.bg-primary {
+  background-color: #004830 !important;
+}
+
+.badge.bg-dark {
+  background-color: #241D45 !important;
+}
+/* Hero Section */
+.genrgy-hero {
+  background: url('images/genrgy-spiral-bg.png') center/cover no-repeat;
+  height: 90vh;
+  color: #fff;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hero Title */
+.genrgy-title {
+  font-family: 'Grown', serif;
+  font-size: 4rem;
+  animation: pulse-text 3s infinite;
+}
+
+@keyframes pulse-text {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+/* Lightning Bolt Animation */
+.lightning-bolt {
+  font-size: 4rem;
+  color: #FEA000;
+  animation: flicker 1.5s infinite;
+}
+
+@keyframes flicker {
+  0%, 100% { opacity: 1; transform: rotate(0deg); }
+  45% { opacity: 0.3; transform: rotate(-5deg); }
+  55% { opacity: 0.7; transform: rotate(5deg); }
+  70% { opacity: 0.9; transform: rotate(-3deg); }
+}
+
+.genrgy-fun-title {
+  font-family: 'Bungee', cursive;
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  color: #E635BD; /* Hot pink */
+  text-shadow: 2px 2px 0 #241D45, 4px 4px 12px rgba(246, 86, 186, 0.8);
+  animation: pulse-text 2.5s infinite;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}.genrgy-subtitle {
+  color: #E635BD;
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-shadow: 1px 1px 5px rgba(246, 86, 186, 0.6);
+  animation: subtitleFade 2.5s ease-in-out both;
+}
+
+@keyframes subtitleFade {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
