@@ -67,6 +67,8 @@
   <p class="text-center genrgy-subtitle">We’re lighting up the Netherlands, one festival at a time</p>
   <div class="lightning-bolt text-center mb-4">⚡</div>
 
+  <!-- Festival Cards Section -->
+<section class="container my-5 py-5">
   <div class="text-center mb-4">
     <button class="btn filter-btn" data-filter="all">All</button>
     <button class="btn filter-btn" data-filter="rock">Rock</button>
@@ -75,14 +77,8 @@
   </div>
 
   <div class="row g-4 justify-content-center" id="festivalCards">
-    <!-- Your cards go here -->
-  </div>
-</section>
-	  
-  <!-- Festival cards grid -->
-  <div class="row g-3 justify-content-evenly" id="festivalCards">
 
-    <!-- Example: Pinkpop -->
+    <!-- Pinkpop -->
     <div class="col-sm-6 col-lg-4 col-xl-3 festival-card rock">
       <div class="card shadow h-100 border border-warning border-2">
         <div class="position-absolute top-0 end-0 m-2 badge bg-warning">GenRgy Bar</div>
@@ -97,7 +93,7 @@
       </div>
     </div>
 
-    <!-- Repeat for other festivals... -->
+    <!-- Lowlands -->
     <div class="col-sm-6 col-lg-4 col-xl-3 festival-card rock metal">
       <div class="card shadow h-100 border border-primary border-2">
         <div class="position-absolute top-0 end-0 m-2 badge bg-primary">GenRgy Lounge</div>
@@ -112,6 +108,7 @@
       </div>
     </div>
 
+    <!-- Zwarte Cross -->
     <div class="col-sm-6 col-lg-4 col-xl-3 festival-card rock">
       <div class="card shadow h-100 border border-warning border-2">
         <img class="img-fluid" src="images/zwartecross.jpg" alt="Zwarte Cross Festival">
@@ -125,6 +122,7 @@
       </div>
     </div>
 
+    <!-- Paaspop -->
     <div class="col-sm-6 col-lg-4 col-xl-3 festival-card rock">
       <div class="card shadow h-100 border border-secondary border-2">
         <img class="img-fluid" src="images/paaspop.jpg" alt="Paaspop Festival">
@@ -138,6 +136,7 @@
       </div>
     </div>
 
+    <!-- Into The Grave -->
     <div class="col-sm-6 col-lg-4 col-xl-3 festival-card metal">
       <div class="card shadow h-100 border border-danger border-2">
         <div class="position-absolute top-0 end-0 m-2 badge bg-danger text-white">GenRgy Stage</div>
@@ -152,6 +151,7 @@
       </div>
     </div>
 
+    <!-- Jera on Air -->
     <div class="col-sm-6 col-lg-4 col-xl-3 festival-card punk">
       <div class="card shadow h-100 border border-dark border-2">
         <div class="position-absolute top-0 end-0 m-2 badge bg-dark text-white">Official GenRgy Partner</div>
@@ -165,25 +165,9 @@
         </div>
       </div>
     </div>
+
   </div>
 </section>
-
-<!-- Filtering script -->
-<script>
-  document.querySelectorAll('.filter-btn').forEach(button => {
-    button.addEventListener('click', () => {
-      const filter = button.getAttribute('data-filter');
-      document.querySelectorAll('.festival-card').forEach(card => {
-        if (filter === 'all' || card.classList.contains(filter)) {
-          card.style.display = 'block';
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    });
-  });
-</script>
-
     <!-- End of the grid with cards -->
 
     <!-- A footer with socials -->
