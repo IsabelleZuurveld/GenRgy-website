@@ -59,115 +59,122 @@
     </nav>
     <!-- End of navigation bar -->
 
-    <section class="container my-4">
-      <div class="border-start border-primary border-5 p-2 bg-primary bg-opacity-10 rounded">
-        <p>This is an example that uses two features of Bootstrap:</p>
-        <ul>
-          <li>
-            <a href="https://getbootstrap.com/docs/5.1/layout/grid/" target="_blank">The responsive grid</a>
-          </li>
-          <li>
-            <a href="https://getbootstrap.com/docs/5.1/components/card/" target="_blank">Cards</a>
-          </li>
-        </ul>
+  <section class="container my-4">
+  <h2 class="text-center mb-4">Find GenRgy at these Rock Festivals in the Netherlands!</h2>
+
+  <!-- Filter buttons -->
+  <div class="text-center mb-4">
+    <button class="btn btn-outline-dark mx-1 filter-btn" data-filter="all">All</button>
+    <button class="btn btn-outline-primary mx-1 filter-btn" data-filter="rock">Rock</button>
+    <button class="btn btn-outline-danger mx-1 filter-btn" data-filter="metal">Metal</button>
+    <button class="btn btn-outline-warning mx-1 filter-btn" data-filter="punk">Punk</button>
+  </div>
+
+  <!-- Festival cards grid -->
+  <div class="row g-3 justify-content-evenly" id="festivalCards">
+
+    <!-- Example: Pinkpop -->
+    <div class="col-sm-6 col-lg-4 col-xl-3 festival-card rock">
+      <div class="card shadow h-100 border border-warning border-2">
+        <div class="position-absolute top-0 end-0 m-2 badge bg-warning">GenRgy Bar</div>
+        <img class="img-fluid" src="images/pinkpop.jpg" alt="Pinkpop Festival">
+        <div class="card-body">
+          <h5 class="card-title">Pinkpop</h5>
+          <p class="card-text">One of the oldest and most iconic rock festivals in Landgraaf. Catch GenRgy at the main stage!</p>
+        </div>
+        <div class="card-footer p-2 text-end">
+          <a href="https://www.pinkpop.nl" target="_blank" class="btn btn-primary">Learn more</a>
+        </div>
       </div>
-    </section>
+    </div>
 
-    <!-- A grid with cards
-      Learn about grids at: https://getbootstrap.com/docs/5.1/layout/grid/
-      Learn about cards at: https://getbootstrap.com/docs/5.1/components/card/
-    -->
-    <main class="container my-4">
-      <div class="row g-3 justify-content-evenly">
-
-        <!-- Card #1 -->
-        <div class="col-sm-6 col-lg-4 col-xl-3">
-          <div class="card shadow h-100">
-            <img class="img-fluid" src="images/placeholder.png" alt="Placeholder Image">
-            <div class="card-body">
-              <h5 class="card-title">Card #1</h5>
-              <p class="card-text">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
-            </div>
-            <div class="card-footer p-2 text-end">
-              <a href="#" class="btn btn-primary">Learn more</a>
-            </div>
-          </div>
+    <!-- Repeat for other festivals... -->
+    <div class="col-sm-6 col-lg-4 col-xl-3 festival-card rock metal">
+      <div class="card shadow h-100 border border-primary border-2">
+        <div class="position-absolute top-0 end-0 m-2 badge bg-primary">GenRgy Lounge</div>
+        <img class="img-fluid" src="images/lowlands.jpg" alt="Lowlands Festival">
+        <div class="card-body">
+          <h5 class="card-title">Lowlands</h5>
+          <p class="card-text">A camping festival in Biddinghuizen full of music, art & culture. Look for GenRgy near the Bravo stage!</p>
         </div>
-
-        <!-- Card #2 -->
-        <div class="col-sm-6 col-lg-4 col-xl-3">
-          <div class="card shadow h-100">
-            <img class="img-fluid" src="images/placeholder.png" alt="Placeholder Image">
-            <div class="card-body">
-              <h5 class="card-title">Card #2</h5>
-              <p class="card-text">Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum.</p>
-            </div>
-            <div class="card-footer p-2 text-end">
-              <a href="#" class="btn btn-primary">Learn more</a>
-            </div>
-          </div>
+        <div class="card-footer p-2 text-end">
+          <a href="https://lowlands.nl" target="_blank" class="btn btn-primary">Learn more</a>
         </div>
-
-        <!-- Card #3 -->
-        <div class="col-sm-6 col-lg-4 col-xl-3">
-          <div class="card shadow h-100">
-            <img class="img-fluid" src="images/placeholder.png" alt="Placeholder Image">
-            <div class="card-body">
-              <h5 class="card-title">Card #3</h5>
-              <p class="card-text">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
-            </div>
-            <div class="card-footer p-2 text-end">
-              <a href="#" class="btn btn-primary">Learn more</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card #4 -->
-        <div class="col-sm-6 col-lg-4 col-xl-3">
-          <div class="card shadow h-100">
-            <img class="img-fluid" src="images/placeholder.png" alt="Placeholder Image">
-            <div class="card-body">
-              <h5 class="card-title">Card #4</h5>
-              <p class="card-text">Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum.</p>
-            </div>
-            <div class="card-footer p-2 text-end">
-              <a href="#" class="btn btn-primary">Learn more</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card #5 -->
-        <div class="col-sm-6 col-lg-4 col-xl-3">
-          <div class="card shadow h-100">
-            <img class="img-fluid" src="images/placeholder.png" alt="Placeholder Image">
-            <div class="card-body">
-              <h5 class="card-title">Card #5</h5>
-              <p class="card-text">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
-            </div>
-            <div class="card-footer p-2 text-end">
-              <a href="#" class="btn btn-primary">Learn more</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card #6 -->
-        <div class="col-sm-6 col-lg-4 col-xl-3">
-          <div class="card shadow h-100">
-            <img class="img-fluid" src="images/placeholder.png" alt="Placeholder Image">
-            <div class="card-body">
-              <h5 class="card-title">Card #6</h5>
-              <p class="card-text">Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum.</p>
-            </div>
-            <div class="card-footer p-2 text-end">
-              <a href="#" class="btn btn-primary">Learn more</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- That was the last card -->
-
       </div>
-    </main>
+    </div>
+
+    <div class="col-sm-6 col-lg-4 col-xl-3 festival-card rock">
+      <div class="card shadow h-100 border border-warning border-2">
+        <img class="img-fluid" src="images/zwartecross.jpg" alt="Zwarte Cross Festival">
+        <div class="card-body">
+          <h5 class="card-title">Zwarte Cross</h5>
+          <p class="card-text">The wild mix of motocross, rock music and stunts in Lichtenvoorde. Fuel up with GenRgy!</p>
+        </div>
+        <div class="card-footer p-2 text-end">
+          <a href="https://www.zwartecross.nl" target="_blank" class="btn btn-primary">Learn more</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-lg-4 col-xl-3 festival-card rock">
+      <div class="card shadow h-100 border border-secondary border-2">
+        <img class="img-fluid" src="images/paaspop.jpg" alt="Paaspop Festival">
+        <div class="card-body">
+          <h5 class="card-title">Paaspop</h5>
+          <p class="card-text">Start your festival season in Schijndel! GenRgy is waiting for you at the foodcourt.</p>
+        </div>
+        <div class="card-footer p-2 text-end">
+          <a href="https://www.paaspop.nl" target="_blank" class="btn btn-primary">Learn more</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-lg-4 col-xl-3 festival-card metal">
+      <div class="card shadow h-100 border border-danger border-2">
+        <div class="position-absolute top-0 end-0 m-2 badge bg-danger text-white">GenRgy Stage</div>
+        <img class="img-fluid" src="images/intothegrave.jpg" alt="Into the Grave Festival">
+        <div class="card-body">
+          <h5 class="card-title">Into The Grave</h5>
+          <p class="card-text">Heavy metal heaven in Leeuwarden. Stay energized during the moshpit with GenRgy!</p>
+        </div>
+        <div class="card-footer p-2 text-end">
+          <a href="https://www.intothegrave.nl" target="_blank" class="btn btn-primary">Learn more</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-lg-4 col-xl-3 festival-card punk">
+      <div class="card shadow h-100 border border-dark border-2">
+        <div class="position-absolute top-0 end-0 m-2 badge bg-dark text-white">Official GenRgy Partner</div>
+        <img class="img-fluid" src="images/jera.jpg" alt="Jera on Air Festival">
+        <div class="card-body">
+          <h5 class="card-title">Jera on Air</h5>
+          <p class="card-text">The biggest punk &amp; hardcore fest in the Netherlands, held in Ysselsteyn. GenRgy will keep you screaming!</p>
+        </div>
+        <div class="card-footer p-2 text-end">
+          <a href="https://www.jeraonair.nl" target="_blank" class="btn btn-primary">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Filtering script -->
+<script>
+  document.querySelectorAll('.filter-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      const filter = button.getAttribute('data-filter');
+      document.querySelectorAll('.festival-card').forEach(card => {
+        if (filter === 'all' || card.classList.contains(filter)) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+
     <!-- End of the grid with cards -->
 
     <!-- A footer with socials -->
