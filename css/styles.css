@@ -244,3 +244,14 @@ body {
     text-decoration: underline;
     color: #fea000 !important;  /* Eventueel lichtere roze bij hover */
   }
+.carousel-item {
+  transition: transform 1.2s ease-in-out, opacity 1.2s ease-in-out;
+  opacity: 0;
+  transform: scale(1.05);
+}
+
+.carousel-item.active {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 2;
+}
