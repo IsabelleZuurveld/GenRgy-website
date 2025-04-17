@@ -17,10 +17,26 @@
 
     <title>PRJ4 Base Group Template &mdash; Cards UX</title>
 
-    <!-- Google Analytics code goes just below here (check PRJ4 Guide for details) -->
-
-    <!-- End of Google Analytics code -->
+<script>
+  document.querySelectorAll('.filter-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      const filter = button.getAttribute('data-filter');
+      document.querySelectorAll('.festival-card').forEach(card => {
+        if (filter === 'all') {
+          card.style.display = 'block';
+        } else {
+          if (card.classList.contains(filter)) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        }
+      });
+    });
+  });
+</script>
     
+	  
   </head>
   <body class="h-100 d-flex flex-column">
 
