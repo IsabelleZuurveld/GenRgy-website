@@ -481,3 +481,13 @@ section h2 {
   transform: scale(1.1);
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
 }
+.text-highlight a {
+  color: #FEA000;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.text-highlight a:hover {
+  color: #004830; /* Slightly darker, deeper orange when you hover */
+  text-decoration: underline;
+}
