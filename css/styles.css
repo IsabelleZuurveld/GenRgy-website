@@ -466,4 +466,18 @@ section h2 {
 .btn-genrgy:hover {
   background-color: #fea000;
   color: #241D45;
+}.color-circle {
+  width: 50px; /* kleiner maken */
+  height: 50px; /* kleiner maken */
+  border-radius: 50%;
+  border: 2px solid white; /* iets subtieler border */
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 0.5rem; /* minder afstand onder de bolletjes */
+}
+
+.color-circle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
 }
