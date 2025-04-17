@@ -15,27 +15,7 @@
     <!-- Bootstrap Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-    <title>PRJ4 Base Group Template &mdash; Cards UX</title>
-
-<script>
-  document.querySelectorAll('.filter-btn').forEach(button => {
-    button.addEventListener('click', () => {
-      const filter = button.getAttribute('data-filter');
-      document.querySelectorAll('.festival-card').forEach(card => {
-        if (filter === 'all') {
-          card.style.display = 'block';
-        } else {
-          if (card.classList.contains(filter)) {
-            card.style.display = 'block';
-          } else {
-            card.style.display = 'none';
-          }
-        }
-      });
-    });
-  });
-</script>
-    
+    <title>PRJ4 Base Group Template &mdash; Cards UX</title>    
 	  
   </head>
   <body class="h-100 d-flex flex-column">
@@ -84,126 +64,134 @@
   <div class="lightning-bolt text-center mb-4">⚡</div>
 </section>  <!-- CLOSE the intro section properly -->
 
-  <!-- Festival Cards Section -->
-<section class="container my-5 py-5">
-  <div class="text-center mb-4">
-    <button class="btn filter-btn" data-filter="all">All</button>
-    <button class="btn filter-btn" data-filter="rock">Rock</button>
-    <button class="btn filter-btn" data-filter="metal">Metal</button>
-    <button class="btn filter-btn" data-filter="punk">Punk</button>
-  </div>
-
-  <div class="row g-4 justify-content-center" id="festivalCards">
-
-<!-- Pinkpop (ROCK) -->
-<div class="col-sm-6 col-lg-4 col-xl-3 festival-card rock">
-      <div class="card shadow h-100 border border-warning border-2">
-        <div class="position-absolute top-0 end-0 m-2 badge bg-warning">GenRgy Bar</div>
-        <img class="img-fluid" src="images/festivals/pinkpop.jpg" alt="Pinkpop Festival">
-        <div class="card-body">
-          <h5 class="card-title">Pinkpop</h5>
-          <p class="card-text">One of the oldest and most iconic rock festivals in Landgraaf. Catch GenRgy at the main stage!</p>
-        </div>
-        <div class="card-footer p-2 text-end">
-          <a href="https://www.pinkpop.nl/" target="_blank" class="btn btn-primary">Learn more</a>
-        </div>
+ <!-- Festival Cards Section -->
+    <section class="container my-5 py-5">
+      <div class="text-center mb-4">
+        <button class="btn filter-btn" data-filter="all">All</button>
+        <button class="btn filter-btn" data-filter="rock">Rock</button>
+        <button class="btn filter-btn" data-filter="metal">Metal</button>
+        <button class="btn filter-btn" data-filter="punk">Punk</button>
       </div>
-    </div>
 
-<!-- Lowlands (ROCK + METAL) -->
-<div class="col-sm-6 col-lg-4 col-xl-3 festival-card rock metal">
-      <div class="card shadow h-100 border border-primary border-2">
-        <div class="position-absolute top-0 end-0 m-2 badge bg-primary">GenRgy Lounge</div>
-        <img class="img-fluid" src="images/festivals/lowlands.png" alt="Lowlands Festival">
-        <div class="card-body">
-          <h5 class="card-title">Lowlands</h5>
-          <p class="card-text">A camping festival in Biddinghuizen full of music, art and culture. Look for GenRgy near the Bravo stage!</p>
+      <div class="row g-4 justify-content-center" id="festivalCards">
+
+        <!-- Pinkpop (ROCK) -->
+        <div class="col-sm-6 col-lg-4 col-xl-3 festival-card rock">
+          <div class="card shadow h-100 border border-warning border-2">
+            <div class="position-absolute top-0 end-0 m-2 badge bg-warning">GenRgy Bar</div>
+            <img class="img-fluid" src="images/festivals/pinkpop.jpg" alt="Pinkpop Festival">
+            <div class="card-body">
+              <h5 class="card-title">Pinkpop</h5>
+              <p class="card-text">One of the oldest and most iconic rock festivals in Landgraaf. Catch GenRgy at the main stage!</p>
+            </div>
+            <div class="card-footer text-end">
+              <a href="https://www.pinkpop.nl/" target="_blank" class="btn btn-primary">Learn more</a>
+            </div>
+          </div>
         </div>
-        <div class="card-footer p-2 text-end">
-          <a href="https://lowlands.nl/" target="_blank" class="btn btn-primary">Learn more</a>
+
+        <!-- Lowlands (ROCK + METAL) -->
+        <div class="col-sm-6 col-lg-4 col-xl-3 festival-card rock metal">
+          <div class="card shadow h-100 border border-primary border-2">
+            <div class="position-absolute top-0 end-0 m-2 badge bg-primary">GenRgy Lounge</div>
+            <img class="img-fluid" src="images/festivals/lowlands.png" alt="Lowlands Festival">
+            <div class="card-body">
+              <h5 class="card-title">Lowlands</h5>
+              <p class="card-text">Camping festival in Biddinghuizen full of music, art & culture. Look for GenRgy near the Bravo stage!</p>
+            </div>
+            <div class="card-footer text-end">
+              <a href="https://lowlands.nl/" target="_blank" class="btn btn-primary">Learn more</a>
+            </div>
+          </div>
         </div>
+
+        <!-- Zwarte Cross (ROCK) -->
+        <div class="col-sm-6 col-lg-4 col-xl-3 festival-card rock">
+          <div class="card shadow h-100 border border-warning border-2">
+            <img class="img-fluid" src="images/festivals/zwartecross.jpg" alt="Zwarte Cross Festival">
+            <div class="card-body">
+              <h5 class="card-title">Zwarte Cross</h5>
+              <p class="card-text">The wild mix of motocross, rock music, and stunts in Lichtenvoorde. Fuel up with GenRgy!</p>
+            </div>
+            <div class="card-footer text-end">
+              <a href="https://www.zwartecross.nl/" target="_blank" class="btn btn-primary">Learn more</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Paaspop (ROCK) -->
+        <div class="col-sm-6 col-lg-4 col-xl-3 festival-card rock">
+          <div class="card shadow h-100 border border-secondary border-2">
+            <img class="img-fluid" src="images/festivals/paaspop.jpg" alt="Paaspop Festival">
+            <div class="card-body">
+              <h5 class="card-title">Paaspop</h5>
+              <p class="card-text">Start your festival season in Schijndel! GenRgy is waiting for you at the foodcourt.</p>
+            </div>
+            <div class="card-footer text-end">
+              <a href="https://www.paaspop.nl/nl/" target="_blank" class="btn btn-primary">Learn more</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Into The Grave (METAL) -->
+        <div class="col-sm-6 col-lg-4 col-xl-3 festival-card metal">
+          <div class="card shadow h-100 border border-danger border-2">
+            <div class="position-absolute top-0 end-0 m-2 badge bg-danger text-white">GenRgy Stage</div>
+            <img class="img-fluid" src="images/festivals/intothegrave.jpg" alt="Into the Grave Festival">
+            <div class="card-body">
+              <h5 class="card-title">Into The Grave</h5>
+              <p class="card-text">Heavy metal heaven in Leeuwarden. Stay energized during the moshpit with GenRgy!</p>
+            </div>
+            <div class="card-footer text-end">
+              <a href="https://intothegrave.nl/" target="_blank" class="btn btn-primary">Learn more</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Jera on Air (PUNK) -->
+        <div class="col-sm-6 col-lg-4 col-xl-3 festival-card punk">
+          <div class="card shadow h-100 border border-dark border-2">
+            <div class="position-absolute top-0 end-0 m-2 badge bg-dark text-white">Official GenRgy Partner</div>
+            <img class="img-fluid" src="images/festivals/jeraonair.jpg" alt="Jera on Air Festival">
+            <div class="card-body">
+              <h5 class="card-title">Jera on Air</h5>
+              <p class="card-text">The biggest punk & hardcore fest in Ysselsteyn. GenRgy will keep you screaming!</p>
+            </div>
+            <div class="card-footer text-end">
+              <a href="https://www.jeraonair.nl/nl/" target="_blank" class="btn btn-primary">Learn more</a>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </div>
+    </section>
 
-<!-- Zwarte Cross (ROCK) -->
-<div class="col-sm-6 col-lg-4 col-xl-3 festival-card rock">
-      <div class="card shadow h-100 border border-warning border-2">
-        <img class="img-fluid" src="images/festivals/zwartecross.jpg" alt="Zwarte Cross Festival">
-        <div class="card-body">
-          <h5 class="card-title">Zwarte Cross</h5>
-          <p class="card-text">The wild mix of motocross, rock music and stunts in Lichtenvoorde. Fuel up with GenRgy!</p>
-        </div>
-        <div class="card-footer p-2 text-end">
-          <a href="https://www.zwartecross.nl/" target="_blank" class="btn btn-primary">Learn more</a>
-        </div>
-      </div>
-    </div>
-
-<!-- Paaspop (ROCK) -->
-<div class="col-sm-6 col-lg-4 col-xl-3 festival-card rock">
-      <div class="card shadow h-100 border border-secondary border-2">
-        <img class="img-fluid" src="images/festivals/paaspop.jpg" alt="Paaspop Festival">
-        <div class="card-body">
-          <h5 class="card-title">Paaspop</h5>
-          <p class="card-text">Start your festival season in Schijndel! GenRgy is waiting for you at the foodcourt.</p>
-        </div>
-        <div class="card-footer p-2 text-end">
-          <a href="https://www.paaspop.nl/nl/" target="_blank" class="btn btn-primary">Learn more</a>
-        </div>
-      </div>
-    </div>
-
-<!-- Into The Grave (METAL) -->
-<div class="col-sm-6 col-lg-4 col-xl-3 festival-card metal">
-      <div class="card shadow h-100 border border-danger border-2">
-        <div class="position-absolute top-0 end-0 m-2 badge bg-danger text-white">GenRgy Stage</div>
-        <img class="img-fluid" src="images/festivals/intothegrave.jpg" alt="Into the Grave Festival">
-        <div class="card-body">
-          <h5 class="card-title">Into The Grave</h5>
-          <p class="card-text">Heavy metal heaven in Leeuwarden. Stay energized during the moshpit with GenRgy!</p>
-        </div>
-        <div class="card-footer p-2 text-end">
-          <a href="https://intothegrave.nl/" target="_blank" class="btn btn-primary">Learn more</a>
-        </div>
-      </div>
-    </div>
-
-<!-- Jera on Air (PUNK) -->
-<div class="col-sm-6 col-lg-4 col-xl-3 festival-card punk">
-      <div class="card shadow h-100 border border-dark border-2">
-        <div class="position-absolute top-0 end-0 m-2 badge bg-dark text-white">Official GenRgy Partner</div>
-        <img class="img-fluid" src="images/festivals/jeraonair.jpg" alt="Jera on Air Festival">
-        <div class="card-body">
-          <h5 class="card-title">Jera on Air</h5>
-          <p class="card-text">The biggest punk &amp; hardcore fest in the Netherlands, held in Ysselsteyn. GenRgy will keep you screaming!</p>
-        </div>
-        <div class="card-footer p-2 text-end">
-          <a href="https://www.jeraonair.nl/nl/" target="_blank" class="btn btn-primary">Learn more</a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-    <!-- End of the grid with cards -->
-
-    <!-- A footer with socials -->
-     <footer class="shadow-lg mt-auto py-4" style="background-color: #E412AA;">
+    <!-- Footer -->
+    <footer class="shadow-lg mt-auto py-4" style="background-color: #E412AA;">
       <div class="container d-flex justify-content-between align-items-center">
         <p>©️ 2025/present — GenRgy</p>
         <ul class="list-unstyled d-flex align-items-center opacity-75">
-          <li>
-            <a href="https://www.facebook.com/profile.php?id=61574077665211&locale=nl_NL" target="_blank">
-              <img class="m-2" src="images/facebook.svg" alt="LinkedIn" width="26">
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/genr.gy/reels/" target="_blank">
-              <img class="m-2" src="images/instagram.svg" alt="Instagram" width="26">
-            </a>
-          </li>
+          <li><a href="https://www.facebook.com/profile.php?id=61574077665211" target="_blank"><img class="m-2" src="images/facebook.svg" alt="Facebook" width="26"></a></li>
+          <li><a href="https://www.instagram.com/genr.gy/reels/" target="_blank"><img class="m-2" src="images/instagram.svg" alt="Instagram" width="26"></a></li>
         </ul>
       </div>
     </footer>
+
+    <!-- JavaScript Filtering -->
+    <script>
+      document.querySelectorAll('.filter-btn').forEach(button => {
+        button.addEventListener('click', () => {
+          const filter = button.getAttribute('data-filter');
+          document.querySelectorAll('.festival-card').forEach(card => {
+            if (filter === 'all' || card.classList.contains(filter)) {
+              card.style.display = 'block';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    </script>
+
   </body>
 </html>
