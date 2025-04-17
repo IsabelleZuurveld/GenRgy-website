@@ -842,6 +842,28 @@ function copyColor(color) {
 </div> 
 </div> 
     </main>
+<!-- Toast container -->
+<div id="toast" style="position: fixed; bottom: 20px; right: 20px; background-color: #333; color: white; padding: 12px 20px; border-radius: 8px; display: none; font-size: 1rem; z-index: 9999;">
+  Copied!
+</div>
+
+<script>
+function copyColor(color) {
+  navigator.clipboard.writeText(color)
+    .then(() => showToast(`Copied: ${color}`))
+    .catch(err => console.error('Copy failed', err));
+}
+
+function showToast(message) {
+  const toast = document.getElementById('toast');
+  toast.textContent = message;
+  toast.style.display = 'block';
+  
+  setTimeout(() => {
+    toast.style.display = 'none';
+  }, 2000); // Toast disappears after 2 seconds
+}
+</script>
 
   </body>
 </html>
