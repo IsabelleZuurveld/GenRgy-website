@@ -446,3 +446,24 @@ section h2 {
     50% { transform: scale(1.01); }
     100% { transform: scale(1); }
   }
+/* New custom borders */
+.border-genrgy-yellow { border: 2px solid #FEA000 !important; }
+.border-genrgy-pink { border: 2px solid #E635BD !important; }
+.border-genrgy-blue { border: 2px solid #004830 !important; }
+.border-genrgy-grey { border: 2px solid #004830 !important; }
+
+/* Pink button */
+.btn-genrgy {
+  background-color: #E635BD;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.btn-genrgy:hover {
+  background-color: #fea000;
+  color: #241D45;
+}
