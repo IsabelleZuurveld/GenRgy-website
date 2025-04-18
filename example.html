@@ -56,32 +56,36 @@
     </nav>
     <!-- End of navigation bar -->
 
-    <div class="container-fluid">
-      <div class="row bg-success bg-opacity-25">
+<div class="container-fluid">
+  <div class="row bg-success bg-opacity-25 align-items-stretch">
 
- <!-- Left Column: Video + Fun Question -->
-<section class="col-12 col-lg-6 d-flex flex-column p-0">
+    <!-- Left Column: Video + Question -->
+  <div class="col-12 col-lg-6 p-0 d-flex flex-column">
 
-  <!-- Video Section -->
-  <div class="flex-grow-1 d-flex position-relative">
-    <video autoplay loop muted class="w-100" style="object-fit: cover;">
-      <source src="videos/advideogenrgywebsite.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <!-- GenRgy Title Overlay -->
-    <div class="w-100 position-absolute top-50 start-50 translate-middle text-center">
-      <h1 class="fw-bold white-shadow">GenRgy</h1>
-    </div>
+      <!-- Video (fixed aspect ratio) -->
+      <div class="position-relative w-100" style="aspect-ratio: 16/9;">
+        <video autoplay loop muted class="w-100 h-100" style="object-fit: cover;">
+          <source src="videos/advideogenrgywebsite.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="position-absolute top-50 start-50 translate-middle text-center">
+          <h1 class="fw-bold white-shadow">GenRgy</h1>
+        </div>
+      </div>
+
+      <!-- Fun Question filling the remaining space -->
+<div class="d-flex flex-column justify-content-center text-center p-4 flex-grow-1" style="background-color: #004830;">
+  <h3 style="font-weight: bold; color: #F2E958;">⚡ Your Best Night Ever ⚡</h3>
+  <p style="color: #F2E958;">Best festival, Best memory, Best vibe</p>
+  <p style="color: #F2E958;">Tell us yours and fuel the GenRgy!</p>
+  <a href="https://www.instagram.com/genr.gy/" target="_blank" 
+     class="btn text-uppercase mt-3 px-5 py-3 rounded-pill shadow" 
+     style="background-color: #E635BD; color: #241D45; font-weight: bold; letter-spacing: 1.5px; font-size: 1.2rem; border: 2px solid #F2E958;">
+    Share Your Answer
+  </a>
+</div>
+
   </div>
-
-  <!-- Fun Question Section -->
-  <div class="p-4" style="background-color: #FEA000; text-align: center;">
-    <h3 style="color: #241D45; font-weight: bold;">GenRgy Question of the Day</h3>
-    <p style="color: #241D45; font-size: 1.2rem;">If you could relive <strong>one</strong> legendary rock concert — which one would it be?</p>
-    <a href="https://www.instagram.com/genr.gy/" target="_blank" class="btn btn-dark text-uppercase mt-2">Share your answer</a>
-  </div>
-
-</section>
 <!-- Our Vision and Mission -->
 <section class="col-12 col-lg-6 text-center vision-section">
 <h2 class="poster-title mt-2" style="color: #531E40;">Our Vision</h2>
