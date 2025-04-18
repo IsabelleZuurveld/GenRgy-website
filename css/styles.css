@@ -524,30 +524,3 @@ section h2 {
   transform: scale(1.08);
   text-shadow: 1px 1px 2px #000;
 }
-
-  .carousel-caption a.btn {
-    background-color: #F2E958; /* Yellow default */
-    color: #241D45; /* Deep Indigo text */
-    border: 2px solid #F2E958;
-    letter-spacing: 1px;
-    transition: all 0.4s ease;
-    font-weight: bold;
-    font-family: 'Anton', sans-serif; /* OR whatever your poster-title uses */
-    font-size: 1.8rem; /* Bigger text like poster-title */
-    text-transform: uppercase;
-  }
-
-  .carousel-caption a.btn:hover {
-    background-color: #E412AA; /* Pink hover */
-    color: #241D45; /* Deep Indigo text */
-    border-color: #E412AA;
-    box-shadow: 0 0 12px #E412AA;
-  }
-
-  /* If you want to ensure all your poster-title styles are consistent */
-  .poster-title {
-    font-family: 'Anton', sans-serif; /* Your display font */
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-  }
