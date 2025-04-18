@@ -491,3 +491,39 @@ section h2 {
   color: #004830; /* Slightly darker, deeper orange when you hover */
   text-decoration: underline;
 }
+
+.custom-btn {
+  background-color: #E635BD;
+  color: #241D45;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  font-size: 1.2rem;
+  border: 2px solid #F2E958;
+  transition: all 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: #F2E958;
+  color: #004830;
+  transform: scale(1.08);
+  text-shadow: 1px 1px 2px #000;
+}
+</style><!-- Hover effect CSS -->
+<style>
+.custom-btn {
+  background-color: #E635BD;
+  color: #241D45;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  font-size: 1.2rem;
+  border: 2px solid #F2E958;
+  transition: all 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: #F2E958;
+  color: #004830;
+  transform: scale(1.08);
+  text-shadow: 1px 1px 2px #000;
+}
+</style>
