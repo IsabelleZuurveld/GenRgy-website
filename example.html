@@ -195,33 +195,53 @@
       }
     </style>
 
-    <!-- Our Values Section -->
-  <div style="background-color: #241D45;" class="py-3">
-      <div class="container">
-        <div class="row justify-content-center text-center g-2">
-          <div class="col-12">
-         <h2 class="our-values-title">Our values</h2>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <h4 class="value-block value-red">Respect for legends</h4>
-          </div>
-			          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <h4 class="value-block value-green">Fearless expression</h4>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <h4 class="value-block value-orange">Energizing&nbsp;</h4>
-            <p>&nbsp;</p>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <h4 class="value-block value-blue">Bridging generations&nbsp;</h4>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <h4 class="value-block value-purple">Loyalty to the scene</h4>
-          </div>
-        </div>
+<!-- Our Values Section -->
+<div style="background-color: #241D45;" class="py-3">
+  <div class="container">
+    <div class="row justify-content-center text-center g-2">
+      <div class="col-12">
+        <h2 class="our-values-title" style="color: #F2E958;">Our Values</h2>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <h4 class="value-block value-red" onclick="showValue('respect')">Respect for legends</h4>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <h4 class="value-block value-green" onclick="showValue('fearless')">Fearless expression</h4>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <h4 class="value-block value-orange" onclick="showValue('energizing')">Energizing</h4>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <h4 class="value-block value-blue" onclick="showValue('bridging')">Bridging generations</h4>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <h4 class="value-block value-purple" onclick="showValue('loyalty')">Loyalty to the scene</h4>
       </div>
     </div>
 
+    <div id="value-description" class="mt-4 p-4 text-white" style="display: none; background-color: #004830; border-radius: 10px;"></div>
+  </div>
+</div>
+
+<script>
+  const valueTexts = {
+    respect: `We honor the icons who shaped music and culture. Their legacy inspires us to carry their spirit into the future. When our audience sees this, they should feel a deep pride in being part of something timeless, and a motivation to respect and continue the energy of the greats.`,
+
+    fearless: `We celebrate boldness, authenticity, and creativity without fear of judgment. Our community thrives on true self-expression. We want our audience to feel liberated, confident, and unapologetically themselves when they experience GenRgy.`,
+
+    energizing: `Every beat, every sip, every moment with GenRgy should boost your spirit and recharge your passion. We are not just a brand; we are a battery for your soul. Our audience should feel alive, unstoppable, and ready to conquer any stage they stand on.`,
+
+    bridging: `We connect generations by blending the best of all eras. We break barriers between young dreamers and seasoned legends. Our audience should feel a sense of unity, belonging, and a realization that great energy and music transcend age.`,
+
+    loyalty: `We stay true to the communities, venues, artists, and fans that built the culture. Loyalty is our lifeline. Our audience should feel a fierce pride and a deep-rooted connection, knowing that GenRgy stands by their side, rain or shine.`
+  };
+
+  function showValue(key) {
+    const desc = document.getElementById('value-description');
+    desc.innerHTML = valueTexts[key];
+    desc.style.display = 'block';
+  }
+</script>
     <!-- Footer -->
     <footer class="shadow-lg mt-auto py-4" style="background-color: #E412AA;">
       <div class="container d-flex justify-content-between align-items-center">
