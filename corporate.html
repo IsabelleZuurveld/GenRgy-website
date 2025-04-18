@@ -184,7 +184,7 @@ GenRgy stands for the unstoppable spirit that lives in everyone who feels the pu
 </div>
 
 <p class="text-highlight">
-For our GenRgy logo, we took inspiration from iconic rock imagery — including the bold attitude of the AC/DC logo and the powerful fonts often seen across rock band branding. 
+For our GenRgy logo, we took inspiration from iconic rock imagery, including the bold attitude of the AC/DC logo and the powerful fonts often seen across rock band branding. 
 We designed the "R" larger to subtly highlight the word <strong>Generations</strong> hidden within GenRgy, emphasizing our mission to bridge the old and new. 
 The lightning bolt symbolizes raw <strong>energy</strong> and movement, reflecting both music and lifestyle. 
 The bold, blocky lettering ensures that the logo remains highly recognizable, even at smaller sizes (such as the website home button). 
@@ -193,7 +193,7 @@ The logo is designed to flexibly adapt across our color palette from the style g
 
 <!-- Insert small logo underneath -->
 <div class="text-center mt-4">
-  <img src="images/genrgyroze.png" alt="GenRgy Logo" style="width: 150px; height: auto;">
+  <img src="images/genrgyrozenobackground.png" alt="GenRgy Logo" style="width: 150px; height: auto;">
 </div>
 	
 <div class="text-highlight">
@@ -246,6 +246,7 @@ The logo is designed to flexibly adapt across our color palette from the style g
     <div class="color-circle" style="background-color: #531E40;" onclick="copyColor('#531E40')" title="Gritty Plum"></div>
     <p class="text-highlight mt-2">Powerful plum<br><small>#531E40</small></p>
   </div>
+	</div> <!-- <-- Close the row with all color circles -->
 <p class="text-highlight mt-4">
 When we interviewed our audience, it became clear that red and black are the colors most associated with rock culture. 
 We wanted to stay true to that spirit while giving it our own fresh GenRgy twist.<br><br>
@@ -297,11 +298,13 @@ The GenRgy site is designed for <strong>speed, storytelling, and smooth explorat
 <ul class="text-highlight" style="line-height: 1.8;">
   <li><strong>Scroll-driven structure:</strong> Quickly showcases brand, product, and community-building elements</li>
   <li><strong>Mobile-first optimization:</strong> Thumb-friendly, responsive, and fast loading across all devices</li>
-  <li><strong>Visual dividers & color highlights:</strong> Ensure clear navigation without overwhelming the user</li>
+  <li><strong>Visual dividers and color highlights:</strong> Ensure clear navigation without overwhelming the user</li>
 </ul>
 <p class="text-highlight">
 Our goal: <em>get users excited, connected, and ready to rock !</em>
 </p>
+	</div> 
+
 <!-- JavaScript to copy color -->
 <script>
 function copyColor(color) {
@@ -312,8 +315,9 @@ function copyColor(color) {
   });
 }
 	
-<hr class="my-4">
-</script>
+</p>
+</div> <!--  ADD THIS to close the div -->
+</section> <!-- now close the section -->
 		<section class="container my-5 py-5">
 <h4 class="text-highlight" id="production-2">Credits</h4>
 
@@ -561,8 +565,7 @@ Our visual strategy focuses on <strong>authentic, bold, and human moments</stron
     <a href="pdfs/ContentkalenderBrandDevelopmentGenRgy.pdf" target="_blank" style="background-color: #FEA000; color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: bold;">
       Download the Content Calendar
     </a>
-  </p>
-</section>
+
 		  
 		  
 		  
@@ -1023,7 +1026,6 @@ Our visual strategy focuses on <strong>authentic, bold, and human moments</stron
 <!-- Toast container -->
   </div>
   </div>
-    </main>
 <div id="toast" style="position: fixed; bottom: 20px; right: 20px; background-color: #333; color: white; padding: 12px 20px; border-radius: 8px; display: none; font-size: 1rem; z-index: 9999;">
   Copied!
 </div>
@@ -1055,6 +1057,10 @@ function showToast(message) {
   }, 2000); // Toast disappears after 2 seconds
 }
 </script>
-
+        </div>   <!-- sluit de laatste 'text-highlight' div -->
+      </section> <!-- sluit de laatste 'section' -->
+    </div>   <!-- sluit de 'col-sm-8 col-md-9 col-lg-10' div -->
+  </div>   <!-- sluit de 'row' div die op regel 53 was begonnen -->
+</main> <!-- sluit de 'main' container -->
   </body>
 </html>
