@@ -20,7 +20,6 @@
   </head>
 
   <body class="h-100 d-flex flex-column">
-	  <div id="sparkle-container"></div>
 
     <!-- Navigation bar -->
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -65,22 +64,35 @@
         </video>
       </div>
 
-      <div class="custom-text-color text-center mt-5">
-        <h1 class="poster-title">Bridging generations</h1>
+        <section class="text-center mt-5">
+    <h1 class="poster-title">Bridging Generations</h1>
 
-        <div class="poster-text text-center">
-          <h5 class="tagline">Do you want to rock hard with everyone?</h5>
-          <h5 class="tagline">Then we are what you're looking for!</h5>
+    <div class="container mt-4">
+      <p class="tagline" style="font-size: 1.8rem; color: #FEA000; font-weight: bold;">
+      ⚡ Rock hard,&nbsp; Connect deeper,&nbsp; Share louder. ⚡</p>
 
-          <div class="container mt-4">
-            <p style="color: #fea000; font-weight: 700;">
-              With GenRgy every generation is welcome to share their passion for music and connection
-            </p>
-            <p style="color: #fea000">Want to know more?</p>
-            <p style="color: #fea000;">Check out: <a href="example.html">About us</a></p>
-          </div>
-        </div>
+      <p style="color: #f2e958; font-size: 1.2rem; margin-top: 1rem;"> GenRgy isn’t just a drink,&nbsp;</p>
+      <p style="color: #f2e958; font-size: 1.2rem; margin-top: 1rem;">it’s your backstage pass to a world where generations collide and music never dies. </p>
+<ul class="text-highlight" style="list-style-type: none; padding-left: 0; margin-top: 1rem;">
+  <li><strong>⚡ Boost your spark:</strong> One sip, and you're part of the unstoppable rhythm that connects legends and newcomers alike.</li>
+  <li><strong>🎸 Feel the legacy:</strong> From vinyl to viral hits, GenRgy bridges the old soul and the new sound.</li>
+  <li><strong>🔥 Unite your tribe:</strong> Raise a can, meet a stranger, make a memory. GenRgy turns crowds into communities.</li>
+  <li><strong>🎤 Celebrate your anthem:</strong> Every can fuels the soundtrack of a new story: yours, ours, and everyone in between.</li>
+</ul>
+
+      <div class="d-flex justify-content-center align-items-center gap-4 mt-4">
+        <a href="example.html" 
+           class="btn custom-btn px-5 py-3 rounded-pill shadow" 
+           style="background-color: #E635BD; color: #241D45; font-weight: bold; font-size: 1.2rem;">
+          🎸 Learn More About Us
+        </a>
+        <a href="cards.html" 
+           class="btn custom-btn px-5 py-3 rounded-pill shadow" 
+           style="background-color: #FEA000; color: #241D45; font-weight: bold; font-size: 1.2rem;">
+        ⚡ Taste the GenRgy &nbsp;&nbsp; </a>
       </div>
+    </div>
+  </section>
 
     </main>
     <!-- End of main content -->
@@ -94,18 +106,5 @@
         </ul>
       </div>
     </footer>
-	  <script>
-const sparkleContainer = document.getElementById('sparkle-container');
-
-for (let i = 0; i < 25; i++) {
-  const sparkle = document.createElement('div');
-  sparkle.className = 'sparkle';
-  sparkle.style.left = Math.random() * 100 + 'vw';
-  sparkle.style.top = Math.random() * 100 + 'vh';
-  sparkle.style.animationDelay = Math.random() * 10 + 's';
-  sparkle.style.opacity = Math.random();
-  sparkleContainer.appendChild(sparkle);
-}
-</script>
   </body>
 </html>
